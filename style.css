@@ -1,31 +1,39 @@
-body{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center; 
-    height: 100vh;
-    padding: 0;
-    margin: 0;
-    background-color: rgb(230,230,230);
+:root{
+    --colorOrange : rgb(240,108,0);
+    --colorBlue: rgb(0,75,133);
 }
 
-#card{   
-    width: 250px;
-    background-color: white;
-    border-radius: 20px;
+body{
     display: flex;
-    flex-direction: column;
+    background-color: #222;
     justify-content: center;
-    text-align: center;
+    align-items: center;
+}
+
+.image{
+  width: 15px;
+  height: 15px;   
 }
 
 #head{
-    background-color: rgb(1, 43, 57);
-    border-radius: 20px 20px 0px 0px;
+    background-color: var(--colorOrange);
     padding-top: 15px;
     padding-bottom: 15px;
-    font-size:x-large;
+    text-align: center;
+    font-size: xx-large;
     color: white;
+    width: 100%;
+    border-radius: 20px 20px 0px 0px;
+}
+
+#package{
+    width: 250px;
+    background-color: white;
+    border-radius: 0px 0px 20px 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
 }
 
 #price{
@@ -35,42 +43,31 @@ body{
 }
 
 #priceText{
-    font-size:large;
+    font-size: medium;
 }
-#package{
+
+.feature{
     display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
+    justify-content:space-evenly ;
+    width: 200px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-size: smaller;
+    margin-top: 5px;
 }
 
 .feature:nth-child(odd){
     background-color: rgb(242,242,242);
 }
-.feature{
-    display: flex;
-    justify-content: space-evenly;
-    font-size:smaller;
-    width:200px ;
-    padding-top: 10px;
-    padding-bottom: 10px;
-    margin-top: 5px;
-}
-
-.image{
-    height: 15px;
-    width: 15px;
-    margin-right: 10px;
-}
 
 #submit{
-background-color: rgb(1, 43, 57);
-width: 200px;
-border-radius: 5px;
-margin-top: 20px;
-margin-bottom: 20px;
-padding-top: 10px;
-padding-bottom: 10px;
-font-size: small;
-color: white;
+    background-color: var(--colorOrange);
+    width: 200px;
+    border-radius: 5px;
+    margin: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    text-align: center;
+    color: white;
+    font-size: large;
 }
